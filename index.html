@@ -71,9 +71,9 @@ const SIGNOS = {
 const sinTildes = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
 const MAPA = Object.fromEntries(Object.keys(SIGNOS).map(k => [sinTildes(k), k]));
 // Identificador de la hoja de Google (el texto entre /d/ y /edit en el enlace de la hoja).
-const HOJA_ID = "";
+const HOJA_ID = "1JDbaaGxjdgLx-9vzBauSSzOWbpC-moGqdUcM_Ng8nWw";
 const FUENTE = HOJA_ID
-  ? `https://docs.google.com/spreadsheets/d/${HOJA_ID}/gviz/tq?tqx=out:csv`
+  ? `https://docs.google.com/spreadsheets/d/${HOJA_ID}/gviz/tq?tqx=out:csv&gid=440645255`
   : "horoscopo.csv";
 let ultimo = null;
 
